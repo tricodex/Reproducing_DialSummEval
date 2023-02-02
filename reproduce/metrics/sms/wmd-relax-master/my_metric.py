@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from tempfile import TemporaryDirectory
 from tqdm import tqdm
+os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
 
 model_type_dict = {
     'GOLD': 'A',
@@ -11,11 +12,11 @@ model_type_dict = {
     'CODS': 'I','ConvoSumm': 'J', 'MV_BART': 'K', 'PLM': 'L', 'PNEP': 'M', 'S_BART': 'N'
 }
 
-summ_home_path = 'C:\\Users\\patri\\Desktop\\University\\AI\\combots\\DialSummEval\\reproduce\\analysis\\models_eval_new'
+summ_home_path = './reproduce/analysis/models_eval_new'
 
-source_path = 'C:\\Users\\patri\\Desktop\\University\\AI\\combots\\DialSummEval\\reproduce\\analysis\\models_eval_new\\dials.txt'
+source_path = './reproduce/analysis/models_eval_new/dials.txt'
 
-ref_path = 'C:\\Users\\patri\\Desktop\\University\\AI\\combots\\DialSummEval\\reproduce\\analysis\\models_eval_new\\A\\summs.txt'
+ref_path = './reproduce/analysis/models_eval_new/A/summs.txt'
 
 
 def create_tsv(refs_path, hypos_path, out_tsv_path):
@@ -32,9 +33,9 @@ def print_sms_score(output_fname='sms.csv'):
             fpath = os.path.join(summ_home_path, v, 'summs.txt')
             temp_tsv_path = os.path.join(dirname, 'test.tsv')
             create_tsv(refs_path=ref_path, hypos_path=fpath, out_tsv_path=temp_tsv_path)
-            os.system('python C:\\Users\\patri\\Desktop\\University\\AI\\combots\\DialSummEval\\reproduce\\metrics\\sms\\wmd-relax-master\\smd.py {} glove sms'.format(temp_tsv_path))
+            os.system('python C:\\Users\\patri\\Desktop\\University\\AI\\combots\\Reproducing_DialSummEval\\reproduce\\metrics\\sms\\wmd-relax-master\\smd.py {} glove sms'.format(temp_tsv_path))
             
-            res_path = os.path.join(dirname,'C:\\Users\\patri\\Desktop\\University\\AI\\combots\\DialSummEval\\reproduce\\metrics\\sms\\test_glove_sms.out')
+            res_path = os.path.join(dirname,'C:\\Users\\patri\\Desktop\\University\\AI\\combots\\Reproducing_DialSummEval\\reproduce\\metrics\\sms\\test_glove_sms.out')
             df = pd.read_csv(res_path,sep='\t')
             scores = df['sms']
             output_each_path = os.path.join(summ_home_path, v, output_fname)
