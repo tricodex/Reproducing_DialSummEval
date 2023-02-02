@@ -1,6 +1,6 @@
 ## Metrics
 
-This directory contains the metrics that were applied in the orignal paper, some of which are organized into individual directories containing a `my_metric.py` file that executes the metric. The remaining metrics can be executed in the `other_metrics_and_human.py` file. This file contains the remaining metrics:
+This directory contains the metrics that were applied in the orignal paper, some of which are organized into individual directories containing a `my_metric.py` file that executes the metric to gain a metric score. The remaining metrics can be executed in the `other_metrics_and_human.py` file. This file contains the remaining metrics:
 
 - [SummaQA](https://github.com/ThomasScialom/summa-qa)
 - [nlg-eval](https://github.com/Maluuba/nlg-eval#readme) (
@@ -16,6 +16,7 @@ This directory contains the metrics that were applied in the orignal paper, some
  - [BERTScore](https://pypi.org/project/bert-score/)
  - [PPL](https://huggingface.co/docs/transformers/perplexity)
 
+NOTE: All metrics scores are stored in `.\DialSummEvalVU\reproduce\analysis\models_eval_new` A-N.
 NOTE: Carefully follow the instruction for each metric, they are all provided with a link or a README.md.
 NOTE: Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. 
 
