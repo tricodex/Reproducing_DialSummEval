@@ -14,7 +14,7 @@ This repository requires an Anaconda environment. You can set up the environment
 3. Navigate to the repository directory and run the following command in the terminal/command prompt: `conda env create -f environment.yml`
 4. Activate the environment using the following command: `conda activate combotenv`
 
-NOTE: It is advised to use different environments for the metrics.
+NOTE: It is advised to use seperate environments for the metrics.
 
 ## Requirements
 
