@@ -6,7 +6,6 @@ This directory contains the metrics that were applied in the orignal paper, some
 - [nlg-eval](https://github.com/Maluuba/nlg-eval#readme) (
     BLEU,
     METEOR,
-    ROUGE, 
     Embedding Average,
     Vector Extrema,
     Greedy Matching)
