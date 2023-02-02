@@ -24,7 +24,7 @@ NOTE: [CUDA installation guide Windows](https://docs.nvidia.com/cuda/cuda-instal
 
 ## Annotation
 
-The annotation tool is located in the following path: `.\reproduce\annotation_VU\Annotation_tool.ipynb`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this path.
+The annotation tool is located in the following path: `.\reproduce\annotation_VU\Annotation_tool.ipynb`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this directory.
 
 We conducted an ablation study to examine the impact of the annotation tool on the annotation procedure. 140 summaries (14 summaries per 10 randomly selected dialogues) were annotated using the same method as in the original paper with an Excel sheet, where each model’s summaries were displayed on separate sheets. The results reveal a strong correlation between the results obtained through the tool and the original annotation process, supporting the use of the tool.
 
