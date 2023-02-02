@@ -14,6 +14,8 @@ This repository requires an Anaconda environment. You can set up the environment
 3. Navigate to the repository directory and run the following command in the terminal/command prompt: `conda env create -f environment.yml`
 4. Activate the environment using the following command: `conda activate combotenv`
 
+NOTE: It is advised to use different environments for the metrics.
+
 ## Requirements
 
 The required packages are listed in the `requirements.txt` file. You can install these packages using the following command in the terminal/command prompt: `pip install -r requirements.txt`. Some metrics require packages that are not in the PyPI, this will be specified.
