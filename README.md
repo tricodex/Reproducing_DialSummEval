@@ -11,7 +11,7 @@ This repository requires an Anaconda environment. You can set up the environment
 
 1. Install [Anaconda](https://docs.anaconda.com/anaconda/install/)
 2. Clone this repository
-3. Navigate to the repository directory and run the following command in the terminal/command prompt: `conda env create -f environment_droplet.yml`
+3. Navigate to the repository directory and run the following command in the terminal/command prompt: `conda env create -f environment.yml`
 4. Activate the environment using the following command: `conda activate combotenv`
 
 ## Requirements
