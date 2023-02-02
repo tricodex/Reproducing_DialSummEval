@@ -49,7 +49,7 @@ The metrics are stored in the following path: `.\reproduce\metrics`. The metrics
 
 ## Summarization Models
 
-Each of the 100 dialogues was summarized using 13 models. The present paper uses the generated outputs that were used in the original paper. The original summary outputs are stored inside `.\reproduce\analysis\models_eval_new`, inside a a file called `summs.txt` stored inside its respective directory. Each directory is represents a model with an ID as can be seen in the table underneath. The scores aquired through the metric calculations are also stored in these directories.
+Each of the 100 dialogues was summarized using 13 models. The present paper uses the generated outputs that were used in the original paper. The original summary outputs are stored inside `.\reproduce\analysis\models_eval_new`, inside a a file called `summs.txt` stored inside its respective directory. Each directory is represents a model with an ID as can be seen in the table underneath. Model ID a contains human made summaries. The scores aquired through the metric calculations are also stored in these directories.
 
 | Model ID | Model        |
 |----------|--------------|
