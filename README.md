@@ -31,6 +31,10 @@ We conducted an ablation study to examine the impact of the annotation tool on t
 | Fluency | 0.55             | 0.77             |
 | Relevance | 0.69             | 0.51             |
 
+## Code
+
+Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. The base directory in every python file need to be adjusted or commented out.
+
 ## Analysis
 
 The analysis of the human annotations compared to the metric scores is located in the following path: `.\DialSummEvalVU\reproduce\analysis\analysis.py`. The script can be run using the following command in the terminal/command prompt: `python .\DialSummEvalVU\reproduce\analysis\analysis.py`
