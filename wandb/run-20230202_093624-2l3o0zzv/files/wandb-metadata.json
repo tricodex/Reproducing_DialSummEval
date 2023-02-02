@@ -1,0 +1,51 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-02-02T08:36:25.512353",
+    "startedAt": "2023-02-02T08:36:24.902213",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "\\",
+        "#",
+        "change",
+        "to",
+        "your",
+        "path"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\patri\\Desktop\\University\\AI\\combots\\Reproducing_DialSummEval\\reproduce\\metrics\\factCC\\my_modeling\\my_eval.py",
+    "codePath": "reproduce\\metrics\\factCC\\my_modeling\\my_eval.py",
+    "host": "DESKTOP-PGPVHMI",
+    "username": "Pat",
+    "executable": "C:\\Users\\patri\\.conda\\envs\\combotenv\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3900.0,
+        "min": 0.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3900.0,
+            "min": 0.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 475.69237899780273,
+        "used": 389.4913635253906
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 15.84823989868164
+    }
+}

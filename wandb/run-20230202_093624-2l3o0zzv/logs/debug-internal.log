@@ -1,0 +1,175 @@
+2023-02-02 09:36:24,916 INFO    StreamThr :19184 [internal.py:wandb_internal():87] W&B internal server running at pid: 19184, started at: 2023-02-02 09:36:24.915216
+2023-02-02 09:36:24,917 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: status
+2023-02-02 09:36:24,919 INFO    WriterThread:19184 [datastore.py:open_for_write():85] open: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\run-2l3o0zzv.wandb
+2023-02-02 09:36:24,920 DEBUG   SenderThread:19184 [sender.py:send():334] send: header
+2023-02-02 09:36:24,921 DEBUG   SenderThread:19184 [sender.py:send():334] send: run
+2023-02-02 09:36:25,311 INFO    SenderThread:19184 [dir_watcher.py:__init__():216] watching files in: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files
+2023-02-02 09:36:25,311 INFO    SenderThread:19184 [sender.py:_start_run_threads():1065] run started: 2l3o0zzv with start time 1675326984.917216
+2023-02-02 09:36:25,311 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: summary_record
+2023-02-02 09:36:25,312 INFO    SenderThread:19184 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-02 09:36:25,315 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: check_version
+2023-02-02 09:36:25,316 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: check_version
+2023-02-02 09:36:25,412 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: run_start
+2023-02-02 09:36:25,470 DEBUG   HandlerThread:19184 [system_info.py:__init__():31] System info init
+2023-02-02 09:36:25,471 DEBUG   HandlerThread:19184 [system_info.py:__init__():46] System info init done
+2023-02-02 09:36:25,471 INFO    HandlerThread:19184 [system_monitor.py:start():151] Starting system monitor
+2023-02-02 09:36:25,471 INFO    SystemMonitor:19184 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-02 09:36:25,471 INFO    HandlerThread:19184 [system_monitor.py:probe():172] Collecting system info
+2023-02-02 09:36:25,478 INFO    SystemMonitor:19184 [interfaces.py:start():168] Started cpu
+2023-02-02 09:36:25,479 INFO    SystemMonitor:19184 [interfaces.py:start():168] Started disk
+2023-02-02 09:36:25,479 INFO    SystemMonitor:19184 [interfaces.py:start():168] Started gpu
+2023-02-02 09:36:25,495 INFO    SystemMonitor:19184 [interfaces.py:start():168] Started memory
+2023-02-02 09:36:25,505 INFO    SystemMonitor:19184 [interfaces.py:start():168] Started network
+2023-02-02 09:36:25,512 DEBUG   HandlerThread:19184 [system_info.py:probe():195] Probing system
+2023-02-02 09:36:25,514 DEBUG   HandlerThread:19184 [git.py:repo():40] git repository is invalid
+2023-02-02 09:36:25,514 DEBUG   HandlerThread:19184 [system_info.py:probe():241] Probing system done
+2023-02-02 09:36:25,514 DEBUG   HandlerThread:19184 [system_monitor.py:probe():181] {'os': 'Windows-10-10.0.22000-SP0', 'python': '3.8.16', 'heartbeatAt': '2023-02-02T08:36:25.512353', 'startedAt': '2023-02-02T08:36:24.902213', 'docker': None, 'cuda': None, 'args': ('\\', '#', 'change', 'to', 'your', 'path'), 'state': 'running', 'program': 'C:\\Users\\patri\\Desktop\\University\\AI\\combots\\Reproducing_DialSummEval\\reproduce\\metrics\\factCC\\my_modeling\\my_eval.py', 'codePath': 'reproduce\\metrics\\factCC\\my_modeling\\my_eval.py', 'host': 'DESKTOP-PGPVHMI', 'username': 'Pat', 'executable': 'C:\\Users\\patri\\.conda\\envs\\combotenv\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3900.0, 'min': 0.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3900.0, 'min': 0.0, 'max': 3900.0}], 'disk': {'total': 475.69237899780273, 'used': 389.4913635253906}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 15.84823989868164}}
+2023-02-02 09:36:25,514 INFO    HandlerThread:19184 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-02 09:36:25,514 INFO    HandlerThread:19184 [system_monitor.py:probe():185] Publishing system info
+2023-02-02 09:36:25,514 DEBUG   HandlerThread:19184 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-02 09:36:25,515 DEBUG   HandlerThread:19184 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-02 09:36:25,515 DEBUG   HandlerThread:19184 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-02 09:36:26,316 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\conda-environment.yaml
+2023-02-02 09:36:26,316 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\wandb-summary.json
+2023-02-02 09:36:26,316 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\requirements.txt
+2023-02-02 09:36:29,326 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\conda-environment.yaml
+2023-02-02 09:36:29,658 DEBUG   HandlerThread:19184 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-02 09:36:29,659 INFO    HandlerThread:19184 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-02 09:36:29,667 DEBUG   SenderThread:19184 [sender.py:send():334] send: files
+2023-02-02 09:36:29,667 INFO    SenderThread:19184 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-02 09:36:29,680 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-02 09:36:29,681 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: stop_status
+2023-02-02 09:36:29,891 DEBUG   SenderThread:19184 [sender.py:send():334] send: telemetry
+2023-02-02 09:36:29,893 DEBUG   SenderThread:19184 [sender.py:send():334] send: exit
+2023-02-02 09:36:29,893 INFO    SenderThread:19184 [sender.py:send_exit():557] handling exit code: 2
+2023-02-02 09:36:29,893 INFO    SenderThread:19184 [sender.py:send_exit():559] handling runtime: 4
+2023-02-02 09:36:29,895 INFO    SenderThread:19184 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-02 09:36:29,896 INFO    SenderThread:19184 [sender.py:send_exit():565] send defer
+2023-02-02 09:36:29,896 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,896 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-02 09:36:29,896 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,896 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-02 09:36:29,896 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 1
+2023-02-02 09:36:29,896 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,896 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-02 09:36:29,896 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,896 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-02 09:36:29,896 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 2
+2023-02-02 09:36:29,897 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,897 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-02 09:36:29,897 INFO    HandlerThread:19184 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-02 09:36:29,897 DEBUG   SystemMonitor:19184 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-02 09:36:29,897 DEBUG   SystemMonitor:19184 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-02 09:36:29,897 INFO    HandlerThread:19184 [interfaces.py:finish():175] Joined cpu
+2023-02-02 09:36:29,897 DEBUG   SystemMonitor:19184 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-02 09:36:29,907 INFO    HandlerThread:19184 [interfaces.py:finish():175] Joined disk
+2023-02-02 09:36:29,969 INFO    HandlerThread:19184 [interfaces.py:finish():175] Joined gpu
+2023-02-02 09:36:29,969 INFO    HandlerThread:19184 [interfaces.py:finish():175] Joined memory
+2023-02-02 09:36:29,969 INFO    HandlerThread:19184 [interfaces.py:finish():175] Joined network
+2023-02-02 09:36:29,970 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,970 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-02 09:36:29,970 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 3
+2023-02-02 09:36:29,970 DEBUG   SenderThread:19184 [sender.py:send():334] send: stats
+2023-02-02 09:36:29,970 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,970 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-02 09:36:29,970 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: status_report
+2023-02-02 09:36:29,970 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,971 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-02 09:36:29,971 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 4
+2023-02-02 09:36:29,971 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,971 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-02 09:36:29,971 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,971 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-02 09:36:29,971 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 5
+2023-02-02 09:36:29,971 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,972 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-02 09:36:29,972 DEBUG   SenderThread:19184 [sender.py:send():334] send: summary
+2023-02-02 09:36:29,973 INFO    SenderThread:19184 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-02 09:36:29,973 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,973 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-02 09:36:29,973 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 6
+2023-02-02 09:36:29,974 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:29,974 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-02 09:36:29,974 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:29,974 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-02 09:36:29,978 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: status_report
+2023-02-02 09:36:30,192 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 7
+2023-02-02 09:36:30,192 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:30,192 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-02 09:36:30,193 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:30,193 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-02 09:36:30,298 INFO    Thread-20 :19184 [upload_job.py:push():143] Uploaded file C:\Users\patri\AppData\Local\Temp\tmp7w7pojqfwandb\jui7hjef-wandb-metadata.json
+2023-02-02 09:36:30,328 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\config.yaml
+2023-02-02 09:36:30,329 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\wandb-summary.json
+2023-02-02 09:36:30,329 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\wandb-metadata.json
+2023-02-02 09:36:30,329 INFO    Thread-17 :19184 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\output.log
+2023-02-02 09:36:30,702 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-02 09:36:31,897 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 8
+2023-02-02 09:36:31,898 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: poll_exit
+2023-02-02 09:36:31,898 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:31,898 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-02 09:36:31,898 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:31,899 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-02 09:36:31,899 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 9
+2023-02-02 09:36:31,899 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:31,899 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-02 09:36:31,899 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:31,899 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-02 09:36:31,899 INFO    SenderThread:19184 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-02 09:36:32,346 INFO    SenderThread:19184 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\output.log
+2023-02-02 09:36:32,346 INFO    SenderThread:19184 [dir_watcher.py:finish():392] scan: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files
+2023-02-02 09:36:32,346 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\conda-environment.yaml conda-environment.yaml
+2023-02-02 09:36:32,347 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\config.yaml config.yaml
+2023-02-02 09:36:32,347 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\output.log output.log
+2023-02-02 09:36:32,351 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\requirements.txt requirements.txt
+2023-02-02 09:36:32,354 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\wandb-metadata.json wandb-metadata.json
+2023-02-02 09:36:32,354 INFO    SenderThread:19184 [dir_watcher.py:finish():406] scan save: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\wandb-summary.json wandb-summary.json
+2023-02-02 09:36:32,357 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 10
+2023-02-02 09:36:32,358 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:32,358 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-02 09:36:32,360 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:32,360 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-02 09:36:32,360 INFO    SenderThread:19184 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-02 09:36:32,862 INFO    Thread-22 :19184 [upload_job.py:push():143] Uploaded file C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\config.yaml
+2023-02-02 09:36:32,875 INFO    Thread-23 :19184 [upload_job.py:push():143] Uploaded file C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\output.log
+2023-02-02 09:36:32,876 INFO    Thread-21 :19184 [upload_job.py:push():143] Uploaded file C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\conda-environment.yaml
+2023-02-02 09:36:32,891 INFO    Thread-24 :19184 [upload_job.py:push():143] Uploaded file C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\requirements.txt
+2023-02-02 09:36:33,132 INFO    Thread-25 :19184 [upload_job.py:push():143] Uploaded file C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\files\wandb-summary.json
+2023-02-02 09:36:33,338 INFO    Thread-16 :19184 [sender.py:transition_state():585] send defer: 11
+2023-02-02 09:36:33,339 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:33,339 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-02 09:36:33,339 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:33,339 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-02 09:36:33,339 INFO    SenderThread:19184 [file_pusher.py:join():165] waiting for file pusher
+2023-02-02 09:36:33,339 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 12
+2023-02-02 09:36:33,339 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:33,339 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-02 09:36:33,340 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:33,340 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-02 09:36:33,481 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 13
+2023-02-02 09:36:33,481 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:33,481 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-02 09:36:33,481 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:33,481 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-02 09:36:33,481 INFO    SenderThread:19184 [sender.py:transition_state():585] send defer: 14
+2023-02-02 09:36:33,482 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: defer
+2023-02-02 09:36:33,482 DEBUG   SenderThread:19184 [sender.py:send():334] send: final
+2023-02-02 09:36:33,482 INFO    HandlerThread:19184 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-02 09:36:33,482 DEBUG   SenderThread:19184 [sender.py:send():334] send: footer
+2023-02-02 09:36:33,482 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: defer
+2023-02-02 09:36:33,482 INFO    SenderThread:19184 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-02 09:36:33,482 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-02 09:36:33,483 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: server_info
+2023-02-02 09:36:33,483 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-02 09:36:33,483 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: poll_exit
+2023-02-02 09:36:33,483 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-02 09:36:33,483 DEBUG   SenderThread:19184 [sender.py:send_request():361] send_request: server_info
+2023-02-02 09:36:33,808 INFO    MainThread:19184 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-02-02 09:36:33,808 INFO    MainThread:19184 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-02-02 09:36:33,808 INFO    MainThread:19184 [wandb_run.py:_footer_sync_info():3383] logging synced files
+2023-02-02 09:36:33,809 DEBUG   HandlerThread:19184 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-02 09:36:33,809 INFO    HandlerThread:19184 [handler.py:finish():841] shutting down handler
+2023-02-02 09:36:34,495 INFO    WriterThread:19184 [datastore.py:close():299] close: C:\Users\patri\Desktop\University\AI\combots\Reproducing_DialSummEval\wandb\run-20230202_093624-2l3o0zzv\run-2l3o0zzv.wandb
+2023-02-02 09:36:34,818 INFO    SenderThread:19184 [sender.py:finish():1491] shutting down sender
+2023-02-02 09:36:34,818 INFO    SenderThread:19184 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-02 09:36:34,818 INFO    SenderThread:19184 [file_pusher.py:join():165] waiting for file pusher
