@@ -35,7 +35,7 @@ We conducted an ablation study to examine the impact of the annotation tool on t
 
 ## Code
 
-Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. The base directory in every python file need to be adjusted or commented out.
+Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. The base directory in every python file needs to be adjusted or commented out.
 
 ## Analysis
 
