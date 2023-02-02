@@ -37,7 +37,7 @@ We conducted an ablation study to examine the impact of the annotation tool on t
 
 ## Code
 
-Most paths are setup for Unix-like systems (Mac OS X and Linux) `path\to\file`, but since the experiments were ran on Windows some path are `path//to//file`, these should be changed. Base directory paths should also be changed or commented out.
+Most paths are setup for Unix-like systems (Mac OS X and Linux) `path\to\file`, but since the experiments were ran on Windows some path are `path//to//file`, these should be changed if not ran on windows and also because they are local paths. Local base directory paths should also be changed or commented out.
 
 ## Analysis
 
