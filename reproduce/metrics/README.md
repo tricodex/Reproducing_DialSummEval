@@ -1,6 +1,6 @@
 ## Metrics
 
-This directory contains the metrics that were applied in the orignal paper, some of which are organized into individual directories containing a `my_metric.py` file that executes the metric to gain a metric score. The remaining metrics can be executed in the `other_metrics_and_human.py` file. This file contains the remaining metrics:
+This directory contains the metrics that were applied in the orignal paper, some of which are organized into individual directories containing a `my_metric.py` file that executes the metric to aquire the metric score on the summary. The remaining metrics can be executed in the `other_metrics_and_human.py` file. This file contains the remaining metrics:
 
 - [SummaQA](https://github.com/ThomasScialom/summa-qa)
 - [nlg-eval](https://github.com/Maluuba/nlg-eval#readme) (
