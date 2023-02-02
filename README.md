@@ -20,6 +20,8 @@ NOTE: It is advised to use different environments for the metrics.
 
 The required packages are listed in the `requirements.txt` file. You can install these packages using the following command in the terminal/command prompt: `pip install -r requirements.txt`. Some metrics require packages that are not in the PyPI, this will be specified.
 
+NOTE: [CUDA installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/)
+
 ## Annotation
 
 The annotation tool is located in the following path: `.\DialSummEvalVU\reproduce\annotation_VU\Annotation_tool.ipynb`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this path.
