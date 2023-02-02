@@ -1,7 +1,7 @@
 ## Analysis
 
 The following noteworthy functions are included in analysis.py:
-- `get_human_scores`: reads human ratings from a CSV file and returns the ratings for a specified dimension as a list of lists.
+- `get_human_scores`: reads human ratings from a CSV file and returns the ratings for a specified dimension as a list of lists. There are 3 versions of this function inside the file.
 - `print_human_ratings`: prints the average human ratings for each model for a specified rating dimension. It works by:
   - Reading in the human ratings from the appropriate CSV file using the `get_human_scores` function.
   - Chunking the human ratings into lists of length 14 (one list for each model).
