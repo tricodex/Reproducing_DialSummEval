@@ -20,7 +20,7 @@ NOTE: It is advised to use different environments for the metrics.
 
 The required packages are listed in the `requirements.txt` file. You can install these packages using the following command in the terminal/command prompt: `pip install -r requirements.txt`. Some metrics require packages that are not in the PyPI, this will be specified.
 
-NOTE: [CUDA installation guide Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/) [CUDA installation guide Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
+NOTE: [CUDA installation guide Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/), [CUDA installation guide Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
 
 ## Annotation
 
