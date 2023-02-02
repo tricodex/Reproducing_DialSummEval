@@ -16,7 +16,7 @@ This directory contains the metrics that were applied in the orignal paper, some
  - [BERTScore](https://pypi.org/project/bert-score/)
  - [PPL](https://huggingface.co/docs/transformers/perplexity)
 
-NOTE: Carefully follow the instruction for each metric, they are all provided with a link.
+NOTE: Carefully follow the instruction for each metric, they are all provided with a link or a README.md.
 NOTE: Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. 
 
 ### Categorization
