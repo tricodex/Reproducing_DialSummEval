@@ -24,7 +24,7 @@ NOTE: [CUDA installation guide](https://docs.nvidia.com/cuda/cuda-installation-g
 
 ## Annotation
 
-The annotation tool is located in the following path: `.\DialSummEvalVU\reproduce\annotation_VU\Annotation_tool.ipynb`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this path.
+The annotation tool is located in the following path: `.\reproduce\annotation_VU\Annotation_tool.ipynb`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this path.
 
 We conducted an ablation study to examine the impact of the annotation tool on the annotation procedure. 140 summaries (14 summaries per 10 randomly selected dialogues) were annotated using the same method as in the original paper with an Excel sheet, where each model’s summaries were displayed on separate sheets. The results reveal a strong correlation between the results obtained through the tool and the original annotation process, supporting the use of the tool.
 
@@ -41,15 +41,15 @@ Depending on the operating system (e.g. Linux/Windows), several paths within the
 
 ## Analysis
 
-The analysis of the human annotations compared to the metric scores is located in the following path: `.\DialSummEvalVU\reproduce\analysis\analysis.py`. The script can be run using the following command in the terminal/command prompt: `python .\DialSummEvalVU\reproduce\analysis\analysis.py`
+The analysis of the human annotations compared to the metric scores is located in the following path: `.\reproduce\analysis\analysis.py`. The script can be run using the following command in the terminal/command prompt: `python .\reproduce\analysis\analysis.py`
 
 ## Metrics
 
-The metrics are stored in the following path: `.\DialSummEvalVU\reproduce\metrics`. The metrics were calculated using the evaluation metrics such as ROUGE, BLEU, METEOR, BERTScore, MoverScore, BARTScore, SMS, Embedding average, Vector extrema, FEQA, SummaQA, QuestEval, FactCC, and DAE.
+The metrics are stored in the following path: `.\reproduce\metrics`. The metrics were calculated using the evaluation metrics such as ROUGE, BLEU, METEOR, BERTScore, MoverScore, BARTScore, SMS, Embedding average, Vector extrema, FEQA, SummaQA, QuestEval, FactCC, and DAE.
 
 ## Summarization Models
 
-Each of the 100 dialogues was summarized using 13 models. The present paper uses the generated outputs that were used in the original paper. The original summary outputs are stored inside `.\DialSummEvalVU\reproduce\analysis\models_eval_new`, inside a a file called `summs.txt` stored inside its respective directory. Each directory is represents a model with an ID as can be seen in the table underneath. The scores aquired through the metric calculations are also stored in these directories.
+Each of the 100 dialogues was summarized using 13 models. The present paper uses the generated outputs that were used in the original paper. The original summary outputs are stored inside `.\reproduce\analysis\models_eval_new`, inside a a file called `summs.txt` stored inside its respective directory. Each directory is represents a model with an ID as can be seen in the table underneath. The scores aquired through the metric calculations are also stored in these directories.
 
 | Model ID | Model        |
 |----------|--------------|
