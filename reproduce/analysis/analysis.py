@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import json
 
-os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # CHANGE THIS DIRECTORY TO SET THE BASE DIRECTORY, THEN THE REST SHOULD WORK
+os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
 
 model_type_dict = {
     'GOLD': 'A',
@@ -43,12 +43,14 @@ def merge_csv(metrics, out_fname='metrics.csv'):
         out_path = os.path.join(summ_home_path, v, out_fname)
         df.to_csv(out_path, index=False)    
 
-#helper function for get_human_scores()
+# helper function for get_human_scores()
 def chunker(seq, size):
     return (seq[pos:pos + size] for pos in range(0, len(seq), size))
 
 """
-Code for different inputfiles:
+CODE FOR DIFFERENT INPUTFILES:
+
+Original code:
 
 def get_human_scores(fname, human_rate_type):
     '''
@@ -59,6 +61,8 @@ def get_human_scores(fname, human_rate_type):
         df = pd.read_excel(fname, sheet_name=v)
         raw_scores.append(df[human_rate_type].tolist())
     return np.array(raw_scores).T
+
+Jsonlines file:
 
 def get_human_scores(fname, human_rate_type, list_index): #list_index = new
     '''
@@ -84,8 +88,6 @@ def get_human_scores(fname, human_rate_type, list_index): #list_index = new
         return data_list
 """
 
-
- 
 def get_human_scores(fname, human_rate_type):
     ann=pd.read_csv(fname, delimiter=';')
     ann.rename(columns={'coherence_results': "Coherence", 'consistency_results':'Consistency', 'fluency_results':'Fluency', 'relevance_results':'Relevance'}, inplace=True)
@@ -388,9 +390,9 @@ if __name__ == '__main__':
     print_human_ratings('Relevance')
     print_human_ratings('Fluency')
     print('print correlation matrix of the metrics to: figs/SAMSUM/metrics_corr.jpg')
-    get_corr_matrix_metrics('figs/SAMSUM/metrics_corr_v1.jpg')
+    get_corr_matrix_metrics('figs/SAMSUM/metrics_corr.jpg')
     print('print correlation matrix of the dimension to: figs/SAMSUM/our_dimensions_corr.jpg')
-    get_corr_matrix_dimension('figs/SAMSUM/our_dimensions_corr_v1.jpg')
+    get_corr_matrix_dimension('figs/SAMSUM/our_dimensions_corr.jpg')
     print_rouge_sample()
     _plot_cal_pearsonr_bartscore('Coherence')
     _plot_cal_pearsonr_bartscore('Fluency')
