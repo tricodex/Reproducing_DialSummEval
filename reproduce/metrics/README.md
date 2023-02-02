@@ -16,9 +16,9 @@ This directory contains the metrics that were applied in the orignal paper, some
  - [BERTScore](https://pypi.org/project/bert-score/)
  - [PPL](https://huggingface.co/docs/transformers/perplexity)
 
-NOTE: All metrics scores are stored in `.\DialSummEvalVU\reproduce\analysis\models_eval_new` A-N.
-NOTE: Carefully follow the instruction for each metric, they are all provided with a link or a README.md.
-NOTE: Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. 
+- NOTE: All metrics scores are stored in `.\DialSummEvalVU\reproduce\analysis\models_eval_new` A-N.
+- NOTE: Carefully follow the instruction for each metric, they are all provided with a link or a README.md.
+- NOTE: Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. 
 
 ### Categorization
 
