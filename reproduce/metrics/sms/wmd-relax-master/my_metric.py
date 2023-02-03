@@ -1,8 +1,9 @@
 import os
+#os.chrdir()
 import pandas as pd
 from tempfile import TemporaryDirectory
 from tqdm import tqdm
-os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
+
 
 model_type_dict = {
     'GOLD': 'A',
