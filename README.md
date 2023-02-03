@@ -9,7 +9,7 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
 
 ## Repository Structure
 
-- Annotations And Calculations+
+- Annotations and Correlations
     - data
         - ablation_results_annX.xlsx (where x is 1-3, for three annotators)
         - original_paper_results.json
