@@ -1,12 +1,11 @@
-import os
 import numpy as np
 from tqdm import tqdm
 import pandas as pd
 
 
-
+import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-#os.chdir('C:/Users/patri/Desktop/University/AI/combots/DialSummEval/') #new
+#os.chdir()
 
 model_type_dict = {
     'GOLD': 'A',
