@@ -58,7 +58,7 @@ The annotation tool is located in the following directory: `.\Annotations and Co
 
 We conducted an ablation study to examine the impact of the annotation tool on the annotation procedure. 140 summaries (14 summaries per 10 randomly selected dialogues) were annotated using the same method as in the original paper with an Excel sheet, where each model’s summaries were displayed on separate sheets. The results reveal a strong correlation between the results obtained through the tool and the original annotation process, supporting the use of the tool.
 
-| Dimension | Present-Original | Present-Ablation |
+| Dimension | Reproduction-Original | Full Reproduction-Ablation |
 |-----------|------------------|------------------|
 | Coherence | 0.42             | 0.70             |
 | Consistency | 0.77             | 0.66             |
