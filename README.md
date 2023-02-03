@@ -24,10 +24,10 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
 - reproduce
     - analysis
         - models_eval_new
-            - ... (Scores and summaries for all models)
+            - ... (scores and summaries for and from each model)
         - analysis.py
     - metrics
-        - ... (All the metrics)
+        - ... (metrics)
        
 
 ## Environment Setup
