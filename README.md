@@ -41,11 +41,11 @@ Most paths are setup for Unix-like systems (Mac OS X and Linux) `path\to\file`, 
 
 ## Analysis
 
-The analysis of the human annotations compared to the metric scores is located in the following path: `.\reproduce\analysis\analysis.py` and contain a README.md for the `analysis.py` file. The script can be run using the following command in the terminal/command prompt: `python .\reproduce\analysis\analysis.py`
+The analysis of the human annotations compared to the metric scores is located in the following path: `.\reproduce\analysis\analysis.py` and contains a seperate `README.md` for the `analysis.py` file. The script can be run using the following command in the terminal/command prompt: `python .\reproduce\analysis\analysis.py`
 
 ## Metrics
 
-The metrics are stored in the following path: `.\reproduce\metrics` and contain a README.md. The metrics were calculated using the evaluation metrics such as ROUGE, BLEU, METEOR, BERTScore, MoverScore, BARTScore, SMS, Embedding average, Vector extrema, FEQA, SummaQA, QuestEval, FactCC, and DAE.
+The metrics are stored in the following path: `.\reproduce\metrics` and contains a seperate `README.md`. The metrics were calculated using the evaluation metrics such as ROUGE, BLEU, METEOR, BERTScore, MoverScore, BARTScore, SMS, Embedding average, Vector extrema, FEQA, SummaQA, QuestEval, FactCC, and DAE.
 
 ## Summarization Models
 
