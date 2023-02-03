@@ -98,7 +98,7 @@ Each of the 100 dialogues was summarized using 13 models. The present paper uses
 
 ## Results
 
-The original paper’s main claims were reproduced. While not all original authors arguments were replicated (e.g. ROUGE scoring higher for relevance), the correlation between metrics and human judgments showed similar tendencies as in [1]. The annotations correlated with the original at a Pearson score of 0.6, sufficient for reproducing main claims.
+The original paper’s main claims were reproduced. While not all original authors arguments were replicated (e.g. ROUGE scoring higher for relevance), the correlation between metrics and human judgments showed similar tendencies as in the original paper. The annotations correlated with the original at a Pearson score of 0.6, sufficient for reproducing main claims.
 
 
 
