@@ -52,7 +52,7 @@ NOTE: [CUDA installation guide Windows](https://docs.nvidia.com/cuda/cuda-instal
 
 ## Annotation
 
-The annotation tool is located in the following directory: `.\Annotations and Correlations` and contains a seperate `README.md`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this directory.
+The annotation tool is located in the following directory: `.\Annotations and Correlations` and contains a separate `README.md`. This Jupyter Notebook can be used to annotate the dialogue summaries. The reproduced annotations are also stored in in this directory.
 
 We conducted an ablation study to examine the impact of the annotation tool on the annotation procedure. 140 summaries (14 summaries per 10 randomly selected dialogues) were annotated using the same method as in the original paper with an Excel sheet, where each model’s summaries were displayed on separate sheets. The results reveal a strong correlation between the results obtained through the tool and the original annotation process, supporting the use of the tool.
 
@@ -77,7 +77,7 @@ The metrics are stored in the following path: `.\reproduce\metrics` and contains
 
 ## Summarization Models
 
-Each of the 100 dialogues was summarized using 13 models. The present paper uses the generated outputs that were used in the original paper. The original summary outputs are stored inside `.\reproduce\analysis\models_eval_new`, inside a a file called `summs.txt` stored inside its respective directory. Each directory represents a model with an ID, as can be seen in the table underneath. Model-ID `A` contains human made summaries. The scores aquired through the metric calculations are also stored in these directories.
+Each of the 100 dialogues was summarized using 13 models, in addition to one human reference summary. The present paper uses the generated outputs that were used in the original paper. The original summary outputs are stored inside `.\reproduce\analysis\models_eval_new`, inside a a file called `summs.txt` stored inside its respective directory. Each directory represents a model with an ID, as can be seen in the table underneath. Model-ID `A` contains human made summaries. The scores aquired through the metric calculations are also stored in these directories.
 
 | Model-ID | Model        |
 |----------|--------------|

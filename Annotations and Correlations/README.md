@@ -40,7 +40,7 @@ This script calculates the correlation between two sets of annotations, one from
 The code reads the full study data (ann1, ann2, ann3) and ablation study data (df_1, df_2, df_3) into Pandas dataframes. Next, the code extracts only the dialogues used in the ablation study from the full study data. Finally, the code performs the correlation calculation using Pearson's R. This calculation is performed for each of the four evaluation criteria: coherence, consistency, fluency, and relevance.
 
 #### iaa_calculation.py
-This code calculates the inter-annotator agreement (IAA) scores between the annotations of three annotators (ann1, ann2, and ann3). It does this by comparing the scores for four dimensions of each annotation: consistency, coherence, fluency, and relevance. It uses Krippendirff's alpha to calculate the IAA. This calculation is done for the present paper, and redone for the original paper by Gao & Wan (2022)
+This code calculates the inter-annotator agreement (IAA) scores between the annotations of three annotators (ann1, ann2, and ann3). It does this by comparing the scores for four dimensions of each annotation. It uses Krippendirff's alpha to calculate the IAA. This calculation is done for the present paper, and redone for the original paper by Gao & Wan (2022)
 
 #### originalVpresent_corr.py
 Like `ablation_corr.py`, this code calculates the correlation between two sets of annotations. This code calculated it between the results from Goa & Wan (2022) and the full results from the present paper.
@@ -58,7 +58,7 @@ pandas==1.4.4\
 ipywidgets==7.6.5
 
 ## Conclusion
-Please refer to the paper (found in the root of this Github) for more information on the Annotation Tool and the calculations done in the scripts
+Please refer to the paper (link will be included here) for more information on the Annotation Tool and the calculations done in the scripts
 
 ## Reference
 M. Gao and X. Wan. “DialSummEval: Revisiting Summarization Evaluation for Dialogues.” In: Proceedings of
