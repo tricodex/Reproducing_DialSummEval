@@ -1,7 +1,7 @@
 # Reproduction of DialSummEval  
 ### Evaluation of automatic summarization evaluation metrics
 
-[![Python 3.7+](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/) [![Anaconda](https://anaconda.org/conda-forge/terraform-provider-github/badges/version.svg)](https://docs.anaconda.com/anaconda/install/)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) [![Anaconda](https://anaconda.org/conda-forge/terraform-provider-github/badges/version.svg)](https://docs.anaconda.com/anaconda/install/)
 
 This repository is created for the reproduction of [DialSummEval: Revisiting summarization evaluation for dialogues](https://aclanthology.org/2022.naacl-main.418). The code and data of the original authors and ourselves are included in the repository. 
 
@@ -22,6 +22,8 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
     - IAA_CORR_calc.ipynb
     - Annotation_tool.ipynb
 - figs (output from analysis.py)
+- original annotations
+    - human_judgment.jsonl   
 - reproduce
     - analysis
         - models_eval_new
@@ -29,7 +31,6 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
         - analysis.py
     - metrics
         - ... (metrics)
-- wandb (output from factCC metric)
 - environment.yml
 - requirements.txt
 
