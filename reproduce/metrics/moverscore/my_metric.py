@@ -1,6 +1,6 @@
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
+#os.chdir()
 from tqdm import tqdm
 import numpy as np
 from scipy.stats import pearsonr, spearmanr, kendalltau
