@@ -12,10 +12,12 @@ A project to perform annotations and calculations on the DialSummEval dataset.
   - [originalVpresent_iaa_corr.py](#originalVpresent_iaa_corr.py)
   - [IAA_CORR_calc.ipynb](#IAA_CORR_calc.ipynb)
   - [Annotation_tool.ipynb](#Annotation_tool.ipynb)
+- [Dependencies](#dependencies)
+- [Conclusion](#conclusion)
 
 ## Directory Structure
 
-- Annotations And Calculations/
+- Annotations And Calculations+
     - data
         - ablation_results_annX.xlsx (where x is 1-3, for three annotators)
         - original_paper_results.json
@@ -23,26 +25,30 @@ A project to perform annotations and calculations on the DialSummEval dataset.
     - utils
         - iaa_util.py
     - ablation_corr.py
-    - originalVpresent_iaa_corr.py
+    - originalVpresent_corr.py
+    - iaa_calculation.py
     - IAA_CORR_calc.ipynb
     - Annotation_tool.ipynb
 
 
 ## Scripts
 
-### ablation_corr.py
+#### ablation_corr.py
 `ablation_corr.py` 
-This code calculates the correlation between two sets of annotations, one from a full annotation study and another from a smaller study. The full study uses a special annotation tool while the smaller study uses Excel.
+This script calculates the correlation between two sets of annotations, one from a full annotation study and another from the ablation study. The full study's results were created using a special annotation tool while the ablation results used Excel.
 
-The code reads the full study data (ann1, ann2, ann3) and ablation study data (df_1, df_2, df_3) into Pandas dataframes. Next, the code performs some preprocessing and extracts only the dialogues used in the ablation study from the full study data. Finally, the code performs the correlation calculation by transforming the list of evaluation values into a 2D array with dimensions [n * 14] * 10, where n is the number of annotators. This transformation is performed for each of the four evaluation criteria: coherence, consistency, fluency, and relevance. The code then proceeds to perform the correlation calculation.
+The code reads the full study data (ann1, ann2, ann3) and ablation study data (df_1, df_2, df_3) into Pandas dataframes. Next, the code extracts only the dialogues used in the ablation study from the full study data. Finally, the code performs the correlation calculation using Pearson's R. This calculation is performed for each of the four evaluation criteria: coherence, consistency, fluency, and relevance.
 
-### originalVpresent_iaa_corr.py
-This code calculates the inter-annotator agreement (IAA) scores between the annotations of three annotators (ann1, ann2, and ann3) and the annotations of the original paper. It does this by comparing the scores for four dimensions of each annotation: consistency, coherence, fluency, and relevance. The annotations are loaded from two sources, the annotations from the present paper are stored in .csv files, while the annotations from the original paper are stored in a .jsonl file. The .csv files are loaded using the Pandas library, and the .jsonl file is loaded using the built-in Python library for reading files. The original paper annotations are then transformed to match the format of the annotations from the present paper. Both sets of annotations are then prepared for calculations by transforming their values into lists of 100 items with each item being a list of 14 values. Finally, the IAA scores are calculated using the Krippendorff library.
+#### iaa_calculation.py
+This code calculates the inter-annotator agreement (IAA) scores between the annotations of three annotators (ann1, ann2, and ann3). It does this by comparing the scores for four dimensions of each annotation: consistency, coherence, fluency, and relevance. It uses Krippendirff's alpha to calculate the IAA. This calculation is done for the present paper, and redone for the original paper by Gao & Wan (2022)
 
-### IAA_CORR_calc.ipynb
-`IAA_CORR_calc.ipynb` is a Jupyter Notebook that combines `ablation_corr.py` and `originalVpresent_iaa_corr.py`. This is done to have quick and easy access to all information needed to compare agains the present paper's claims
+#### originalVpresent_corr.py
+Like `ablation_corr.py`, this code calculates the correlation between two sets of annotations. This code calculated it between the results from Goa & Wan (2022) and the full results from the present paper.
 
-### Annotation_tool.ipynb
+#### IAA_CORR_calc.ipynb
+A Jupyter Notebook that combines `ablation_corr.py`, `iaa_calculation.py`, and `originalVpresent_iaa_corr.py`. This is done to have quick and easy access to all information needed to compare agains the present paper's claims
+
+#### Annotation_tool.ipynb
 `Annotation_tool.ipynb` is a Jupyter Notebook containing the newly built Annotation tool that works completely within Jupyter notebooks.
 
 ## Dependencies
@@ -52,4 +58,9 @@ pandas==1.4.4\
 ipywidgets==7.6.5
 
 ## Conclusion
-Please refer to the paper (found in the root of this directory) for more information on the Annotation Tool and the calculations done in the scripts
+Please refer to the paper (found in the root of this Github) for more information on the Annotation Tool and the calculations done in the scripts
+
+## Reference
+M. Gao and X. Wan. “DialSummEval: Revisiting Summarization Evaluation for Dialogues.” In: Proceedings of
+the 2022 Conference of the North American Chapter of the Association for Computational Linguistics:
+Human Language Technologies. 2022, pp. 5693–5709.
