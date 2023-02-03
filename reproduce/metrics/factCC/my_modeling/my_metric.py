@@ -2,8 +2,9 @@ import json
 import numpy as np
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+#os.chdir()
 import nltk
-nltk.download('punkt') # new
+nltk.download('punkt') #comment out if done
 from collections import defaultdict
 import pandas as pd
 from tqdm import tqdm
@@ -15,7 +16,7 @@ model_type_dict = {
     'BART': 'F', 'PEGASUS': 'G', 'UniLM': 'H',
     'CODS': 'I','ConvoSumm': 'J', 'MV_BART': 'K', 'PLM': 'L', 'PNEP': 'M', 'S_BART': 'N'
 }
-os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
+
 
 summ_home_path = './reproduce/analysis/models_eval_new'
 
