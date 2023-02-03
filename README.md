@@ -5,9 +5,7 @@
 
 This repository is created for the reproduction of [DialSummEval: Revisiting summarization evaluation for dialogues](https://aclanthology.org/2022.naacl-main.418). The code and data of the original authors and ourselves are included in the repository. 
 
-The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluation of automatic summarization evaluation metrics](Link to paper).
-
-## Repository Structure
+The link to the reproduction paper will be included here.
 
 - Annotations and Correlations
     - data
