@@ -140,13 +140,13 @@ def filter_noise_scores(s_1, s_2, s_3):
 """
 This chunk of codes repeats throughout the script nas can be seen underneath, this setup is used when analysing the original annotations in jsonl format:
 
-human_scores_1 = get_human_scores(fname='original annotations/human_judgment.jsonl',
+human_scores_1 = get_human_scores(fname='original_annotations/human_judgment.jsonl',
 human_rate_type=human_rate_type,list_index=0)
 
-human_scores_2 = get_human_scores(fname='original annotations/human_judgment.jsonl',
+human_scores_2 = get_human_scores(fname='original_annotations/human_judgment.jsonl',
 human_rate_type=human_rate_type,list_index=1)
 
-human_scores_3 = get_human_scores(fname='original annotations/human_judgment.jsonl',
+human_scores_3 = get_human_scores(fname='original_annotations/human_judgment.jsonl',
 human_rate_type=human_rate_type,list_index=2)
 
 """
