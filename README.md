@@ -1,7 +1,7 @@
 # Reproduction of DialSummEval  
 ### Evaluation of automatic summarization evaluation metrics
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) [![Anaconda](https://anaconda.org/conda-forge/terraform-provider-github/badges/version.svg)](https://docs.anaconda.com/anaconda/install/)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) [![Anaconda](https://anaconda.org/conda-forge/terraform-provider-github/badges/version.svg)](https://docs.anaconda.com/anaconda/install/)
 
 This repository is created for the reproduction of [DialSummEval: Revisiting summarization evaluation for dialogues](https://aclanthology.org/2022.naacl-main.418). The code and data of the original authors and ourselves are included in the repository. 
 
