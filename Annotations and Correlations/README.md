@@ -58,7 +58,7 @@ pandas==1.4.4\
 ipywidgets==7.6.5
 
 ## Conclusion
-Please refer to the paper (found in the root of this Github) for more information on the Annotation Tool and the calculations done in the scripts
+Please refer to the paper (link will be included here) for more information on the Annotation Tool and the calculations done in the scripts
 
 ## Reference
 M. Gao and X. Wan. “DialSummEval: Revisiting Summarization Evaluation for Dialogues.” In: Proceedings of
