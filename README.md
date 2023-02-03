@@ -1,13 +1,15 @@
 # Reproduction of DialSummEval  
 ### Evaluation of automatic summarization evaluation metrics
 
+https://anaconda.org/conda-forge/terraform-provider-github/badges/version.svg
+
 This repository is created for the reproduction of [DialSummEval: Revisiting summarization evaluation for dialogues](https://aclanthology.org/2022.naacl-main.418). The code and data of the original authors and ourselves are included in the repository. 
 
 The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluation of automatic summarization evaluation metrics](Link to paper).
 
 ## Environment Setup
 
-This repository requires an Anaconda environment. You can set up the environment using the following steps:
+This repository has used an Anaconda environment. You can set up the environment using the following steps:
 
 1. Install [Anaconda](https://docs.anaconda.com/anaconda/install/)
 2. Clone this repository
