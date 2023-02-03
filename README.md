@@ -7,6 +7,29 @@ This repository is created for the reproduction of [DialSummEval: Revisiting sum
 
 The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluation of automatic summarization evaluation metrics](Link to paper).
 
+## Repository Structure
+
+- Annotations And Calculations+
+    - data
+        - ablation_results_annX.xlsx (where x is 1-3, for three annotators)
+        - original_paper_results.json
+        - saved_df_annX.csv (where x is 1-3, for three annotators)
+    - utils
+        - iaa_util.py
+    - ablation_corr.py
+    - originalVpresent_corr.py
+    - iaa_calculation.py
+    - IAA_CORR_calc.ipynb
+    - Annotation_tool.ipynb
+- reproduce
+    - analysis
+        - models_eval_new
+            - ...
+        - analysis.py
+    - metrics
+        - ...
+       
+
 ## Environment Setup
 
 This repository has used an Anaconda environment. You can set up the environment using the following steps:
