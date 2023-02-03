@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/Python-3.9-blue.svg)](https://www.python.org/) [![Framework](https://img.shields.io/badge/Jupyter-Notebook-red.svg)](https://jupyter.org/)
 
-A project to perform annotations and calculations on the DialSummEval dataset.
+A collection of scripts and Jupyter notebooks to perform annotations and calculations on the DialSummEval dataset.
 
 
 ## Table of Contents
