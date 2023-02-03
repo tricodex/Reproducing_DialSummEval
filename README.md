@@ -36,7 +36,7 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
 
 ## Environment Setup
 
-This repository has used an Anaconda environment. You can set up the environment using the following steps:
+Anaconda environments have been used for this repository. You can set up the environment using the following steps:
 
 1. Install [Anaconda](https://docs.anaconda.com/anaconda/install/)
 2. Clone this repository
