@@ -28,7 +28,9 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
         - analysis.py
     - metrics
         - ... (metrics)
-       
+- environment.yml
+- requirements.txt
+
 
 ## Environment Setup
 
