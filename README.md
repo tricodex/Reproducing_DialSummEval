@@ -22,6 +22,8 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
     - IAA_CORR_calc.ipynb
     - Annotation_tool.ipynb
 - figs (output from analysis.py)
+- original annotations
+    - human_judgment.jsonl   
 - reproduce
     - analysis
         - models_eval_new
