@@ -15,8 +15,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import json
 
-os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
-
 model_type_dict = {
     'GOLD': 'A',
     'LONGEST_3': 'B', 'LEAD_3': 'C',
