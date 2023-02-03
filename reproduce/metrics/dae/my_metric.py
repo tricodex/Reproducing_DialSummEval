@@ -2,11 +2,12 @@ import json
 import numpy as np
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+#os.chdir()
 import nltk
 from collections import defaultdict
 import pandas as pd
 from tqdm import tqdm
-os.chdir('C:/Users/patri/Desktop/University/AI/combots/Reproducing_DialSummEval') # change to your base path
+
 model_type_dict = {
     'GOLD': 'A',
     'LONGEST_3': 'B', 'LEAD_3': 'C',
