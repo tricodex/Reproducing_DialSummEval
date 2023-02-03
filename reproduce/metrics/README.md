@@ -15,7 +15,7 @@ This directory contains the metrics that were applied in the orignal paper, some
  - [BERTScore](https://pypi.org/project/bert-score/)
  - [PPL](https://huggingface.co/docs/transformers/perplexity)
 
-NOTE: It is higly recommended to run `dae`, `factCC` and `other_metrics_and_human.py` in seperate environments.
+NOTE: It is higly recommended to run `dae`, `factCC` and `other_metrics_and_human.py` in seperate environments. <br />
 NOTE: All metrics scores are stored in `.\reproduce\analysis\models_eval_new` A-N. <br />
 NOTE: Carefully follow the instruction for each metric, they are all provided with a link or a README.md. <br />
 NOTE: Depending on the operating system (e.g. Linux/Windows), several paths within the code need to be adjusted, beware of \ and /. 
