@@ -47,9 +47,10 @@ def merge_csv(metrics, out_fname='metrics.csv'):
 def chunker(seq, size):
     return (seq[pos:pos + size] for pos in range(0, len(seq), size))
 
-"""
-CODE FOR DIFFERENT INPUTFILES:
 
+#CODE FOR DIFFERENT INPUTFILES:
+
+"""
 Original code:
 
 def get_human_scores(fname, human_rate_type):
@@ -62,6 +63,9 @@ def get_human_scores(fname, human_rate_type):
         raw_scores.append(df[human_rate_type].tolist())
     return np.array(raw_scores).T
 
+"""
+
+"""
 Jsonlines file:
 
 def get_human_scores(fname, human_rate_type, list_index): #list_index = new
@@ -88,6 +92,8 @@ def get_human_scores(fname, human_rate_type, list_index): #list_index = new
         return data_list
 """
 
+# Reproduced annotation files:
+
 def get_human_scores(fname, human_rate_type):
     ann=pd.read_csv(fname, delimiter=';')
     ann.rename(columns={'coherence_results': "Coherence", 'consistency_results':'Consistency', 'fluency_results':'Fluency', 'relevance_results':'Relevance'}, inplace=True)
@@ -107,8 +113,13 @@ def get_metric_scores(metric_name, metrics_file='metrics.csv'):
 
 def filter_noise_scores(s_1, s_2, s_3):
     '''
-        filter noise ratings of human and give the average value
-        return numpy.array (100, 14)
+        Filters noise ratings from human ratings and returns the average value as a NumPy array. It works by:
+
+        - Initializing an empty NumPy array to hold the filtered ratings.
+        - Iterating through the three input arrays using the enumerate function, with the index representing the rating number and the values representing the ratings given by each annotator.
+        - For each set of ratings, comparing the values and assigning the value that appears twice to the filtered ratings array. If no value appears twice, taking the average of the three
+        - Return the filtered ratings array.
+
     '''
     res = np.zeros((100, 14))
     s_1 = s_1#.tolist()
@@ -126,18 +137,43 @@ def filter_noise_scores(s_1, s_2, s_3):
                 res[i,j] = (a + b + c) / 3
     return res
 
+"""
+This chunk of codes repeats throughout the script nas can be seen underneath, this setup is used when analysing the original annotations in jsonl format:
+
+human_scores_1 = get_human_scores(fname='original annotations/human_judgment.jsonl',
+human_rate_type=human_rate_type,list_index=0)
+
+human_scores_2 = get_human_scores(fname='original annotations/human_judgment.jsonl',
+human_rate_type=human_rate_type,list_index=1)
+
+human_scores_3 = get_human_scores(fname='original annotations/human_judgment.jsonl',
+human_rate_type=human_rate_type,list_index=2)
+
+"""
 
 def cal_pearsonr(human_rate_type, metric_names=None, level='summary'):
 
+    """
+    
+    Calculates Pearson correlations between human ratings and automatic evaluation scores for a specified rating dimension and a list of metrics, and returns the correlations as a dictionary. To do this, the function:
+
+        - Reads human ratings for the specified dimension and filters out noise ratings.
+        - Reads automatic evaluation scores for the specified list of metrics
+        - Calculates Pearson correlations between the filtered human ratings and the automatic evaluation scores for each metric.
+        - oReturns the correlations as a dictionary with the metric names as keys and the correlations as values.
+
+
+    """
+
     # use average to compute human scores
     # get origin scores for each annotator, dimension: (100, 14)
-    human_scores_1 = get_human_scores(fname='annotation_VU\\saved_df_mojca.csv',
+    human_scores_1 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann1.csv',
     human_rate_type=human_rate_type)
 
-    human_scores_2 = get_human_scores(fname='annotation_VU\\saved_df_rorick.csv',
+    human_scores_2 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann2.csv',
     human_rate_type=human_rate_type)
 
-    human_scores_3 = get_human_scores(fname='annotation_VU\\saved_df_vicky.csv',
+    human_scores_3 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann3.csv',
     human_rate_type=human_rate_type)
 
     # human_scores_avg = (human_scores_1 + human_scores_2 + human_scores_3) / 3  #  (100, 14)
@@ -177,13 +213,13 @@ def cal_pearsonr(human_rate_type, metric_names=None, level='summary'):
 
 
 def print_human_ratings(human_rate_type):
-    human_scores_1 = get_human_scores(fname='annotation_VU\\saved_df_mojca.csv',
+    human_scores_1 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann1.csv',
     human_rate_type=human_rate_type)
 
-    human_scores_2 = get_human_scores(fname='annotation_VU\\saved_df_rorick.csv',
+    human_scores_2 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann2.csv',
     human_rate_type=human_rate_type)
 
-    human_scores_3 = get_human_scores(fname='annotation_VU\\saved_df_vicky.csv',
+    human_scores_3 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann3.csv',
     human_rate_type=human_rate_type)
 
     # human_scores_avg = (human_scores_1 + human_scores_2 + human_scores_3) / 3  #  (100, 14)
@@ -238,13 +274,13 @@ def get_corr_matrix_dimension(figure_path):
     dimensions = ['Coherence','Consistency','Fluency','Relevance']
     for human_rate_type in dimensions:
         
-        human_scores_1 = get_human_scores(fname='annotation_VU\\saved_df_mojca.csv',
+        human_scores_1 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann1.csv',
         human_rate_type=human_rate_type)
 
-        human_scores_2 = get_human_scores(fname='annotation_VU\\saved_df_rorick.csv',
+        human_scores_2 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann2.csv',
         human_rate_type=human_rate_type)
 
-        human_scores_3 = get_human_scores(fname='annotation_VU\\saved_df_vicky.csv',
+        human_scores_3 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann3.csv',
         human_rate_type=human_rate_type)
 
         # human_scores_avg = (human_scores_1 + human_scores_2 + human_scores_3) / 3  #  (100, 14)
@@ -277,13 +313,13 @@ def _plot_cal_pearsonr_bartscore(human_rate_type, metric_names=None, level='syst
 
     # use average to compute human scores
     # get origin scores for each annotator, dimension: (100, 14)
-    human_scores_1 = get_human_scores(fname='annotation_VU\\saved_df_mojca.csv',
+    human_scores_1 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann1.csv',
     human_rate_type=human_rate_type)
 
-    human_scores_2 = get_human_scores(fname='annotation_VU\\saved_df_rorick.csv',
+    human_scores_2 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann2.csv',
     human_rate_type=human_rate_type)
 
-    human_scores_3 = get_human_scores(fname='annotation_VU\\saved_df_vicky.csv',
+    human_scores_3 = get_human_scores(fname='Annotations and Correlations\\data\\saved_df_ann3.csv',
     human_rate_type=human_rate_type)
 
     # human_scores_avg = (human_scores_1 + human_scores_2 + human_scores_3) / 3  #  (100, 14)
