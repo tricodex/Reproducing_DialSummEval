@@ -9,7 +9,7 @@ A collection of scripts and Jupyter notebooks to perform annotations and calcula
 - [Directory Structure](#directory-structure)
 - [Scripts](#scripts)
   - [ablation_corr.py](#ablation_corr.py)
-  - [originalVpresent_corr.py](#originalVpresent_iaa_corr.py)
+  - [originalVpresent_corr.py](#originalVpresent_corr.py)
   - [IAA_CORR_calc.ipynb](#IAA_CORR_calc.ipynb)
   - [Annotation_tool.ipynb](#Annotation_tool.ipynb)
 - [Dependencies](#dependencies)
@@ -17,7 +17,7 @@ A collection of scripts and Jupyter notebooks to perform annotations and calcula
 
 ## Directory Structure
 
-- Annotations And Calculations+
+- Annotations And Calculations
     - data
         - ablation_results_annX.xlsx (where x is 1-3, for three annotators)
         - original_paper_results.json
