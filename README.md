@@ -31,7 +31,6 @@ The link to the reproduction paper is: [Reproduction of DialSummEval - Evaluatio
         - analysis.py
     - metrics
         - ... (metrics)
-- wandb (output from factCC metric)
 - environment.yml
 - requirements.txt
 
